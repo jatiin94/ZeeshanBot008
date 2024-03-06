@@ -20,7 +20,7 @@ exec("rm -rf script/commands/data && mkdir -p script/commands/data && rm -rf scr
 
 const DateAndTime = new Date().toLocaleString('en-US', {
 
-         timeZone: 'Asia/Karachi'
+         timeZone: 'Asia/India'
  }); 
 //console.log(DateAndTime);
 console.log(chalk.bold.hex("#059242").bold(DateAndTime));
@@ -388,7 +388,7 @@ loginApiData.setOptions(global.config.FCAOption)
         logger("FB: facebook.com/zeeshanofficial01", 'made by Zeeshan Altaf');
       var cron = require("node-cron");
       //notif if bot is kaka on palang
-const momentt = require("moment-timezone").tz("Asia/Karachi");
+const momentt = require("moment-timezone").tz("Asia/India");
     const day = momentt.day();
     const time = momentt.format("hh:mm:ss");
 loginApiData.sendMessage(`Hansty Muskryta rehyao janam log ap ka bot active ho geya😘 ${time}`, global.config.ADMINBOT[0])
@@ -415,7 +415,7 @@ cron.schedule('0 0 0 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/India"
 });
 cron.schedule('0 0 1 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -478,7 +478,7 @@ cron.schedule('0 0 18 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Karachi"
+  timezone: "Asia/India"
 });
 cron.schedule('0 0 21 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
